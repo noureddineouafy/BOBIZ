@@ -4,8 +4,7 @@ menu
 
 
 
-User @⁨🏃⁩
-Premium: Tidak
+
 Instagram: http://instagram.com/noureddine_ouafy
 Facebook: https://www.facebook.com/profile.php?id=100063533185520
 
