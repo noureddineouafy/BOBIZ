@@ -1,0 +1,32 @@
+import fetch from 'node-fetch';
+import fs from 'fs';
+import path from 'path';
+
+export let on = {
+   names: ['Main Menu'],
+   tags: ['menu'],
+   command: ['menu', 'help', 'command', 'm'],
+   on: async (m, {
+      conn,
+      command,
+      setting,
+      prefix,
+      checkPremiumUser
+   }) => {
+      let isPremium = checkPremiumUser(m.sender);
+      let prem = isPremium ? 'Aktif' : 'Tidak';
+      let thumbnail = `${setting.thumbnail}`;
+      let sosmed = `${setting.sosmed}`;
+      let jembut = ` ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ `; // hiasan atas
+      let title = `${setting.botName}\n${setting.footer}`;
+      let music = setting.music;
+      let facebook = `Facebook: https://www.facebook.com/profile.php?id=100063533185520`; //url profile facebook kamu jika tidak punya kosongkan saja menjadi ''
+      let header = '┌───⭓';
+      let middle = '│';
+      let bottom = '└───────────⭓';
+      m.react('🎗', m.chat)      
+      function _0x2412(_0x5b8877,_0x109fdb){const _0x519a20=_0xbe5a();return _0x2412=function(_0x36ff,_0x4717af){_0x36ff=_0x36ff-(0xbc0+-0x2220+-0x1*-0x17cb);let _0x5837b1=_0x519a20[_0x36ff];return _0x5837b1;},_0x2412(_0x5b8877,_0x109fdb);}const _0x3a56b9=_0x2412;function _0xbe5a(){const _0x1e5244=['5881239WxlBns','endsWith','3075204RBcoUk','RPTmg','readFile','1661966QcJDwK','959801wUtmRF','from','match','join','filter','reply','log','matchAll','then','indexOf','utf-8','6280155WZBLNy','128216OOqUiZ','sendMessag','replace','User\x20@','tureUrl','.js','1617180kKigWJ','qyjKO','catch','get','isDirector','split','set','readdir','hILvB','push','buffer','./commands','\x0aPremium:\x20','stat','has','image','sender','\x0aInstagram','chat','profilePic','link','group','promises','isFile'];_0xbe5a=function(){return _0x1e5244;};return _0xbe5a();}(function(_0x371d9c,_0x5488d1){const _0x409154=_0x2412,_0x135a22=_0x371d9c();while(!![]){try{const _0x2f5472=-parseInt(_0x409154(0x18e))/(0x2*0xe8f+-0x536+-0x17e7)+parseInt(_0x409154(0x18d))/(-0x1a63+-0x755*-0x5+-0xa44)+-parseInt(_0x409154(0x18a))/(0x3f+0x7f3+-0x82f)+parseInt(_0x409154(0x19a))/(0x15c0+-0x584+-0x1038)+parseInt(_0x409154(0x199))/(0x1*0xe0e+-0x1e13+0x100a)+-parseInt(_0x409154(0x170))/(0x1*0x1b82+0x6f1+-0x7*0x4eb)+parseInt(_0x409154(0x188))/(-0x2*0x1175+0x1*-0x226c+0x455d*0x1);if(_0x2f5472===_0x5488d1)break;else _0x135a22['push'](_0x135a22['shift']());}catch(_0x34bc4c){_0x135a22['push'](_0x135a22['shift']());}}}(_0xbe5a,-0x15fd*0x25+-0x11d497+0x1fc376));try{let menus=new Map();async function readFiles(_0x4452b7){const _0x1df20f=_0x2412,_0x33be0e={'qyjKO':function(_0x3606b0,_0x476704){return _0x3606b0(_0x476704);},'RPTmg':_0x1df20f(0x16f),'hILvB':_0x1df20f(0x198)};let _0x50372c=await fs[_0x1df20f(0x186)][_0x1df20f(0x177)](_0x4452b7);for(let _0x4dae3d of _0x50372c){let _0x560185=await path[_0x1df20f(0x191)](_0x4452b7,_0x4dae3d),_0x1fa86b=await fs[_0x1df20f(0x186)][_0x1df20f(0x17d)](_0x560185);if(_0x1fa86b[_0x1df20f(0x174)+'y']())await _0x33be0e[_0x1df20f(0x171)](readFiles,_0x560185);else{if(_0x1fa86b[_0x1df20f(0x187)]()&&_0x4dae3d[_0x1df20f(0x189)](_0x33be0e[_0x1df20f(0x18b)])){let _0x2509d1=await fs[_0x1df20f(0x186)][_0x1df20f(0x18c)](_0x560185,_0x33be0e[_0x1df20f(0x178)]),_0x2d58d2=/names:\s\['([\w\s]+)'\]/,_0x51375b=/tags:\s\['(.+?)'\]/g,_0x15c88c=await _0x2509d1[_0x1df20f(0x190)](_0x2d58d2),_0x3aed07=await Array[_0x1df20f(0x18f)](_0x2509d1[_0x1df20f(0x195)](_0x51375b));if(_0x15c88c&&_0x15c88c[-0x146d+-0x13e1+0x284f]){let _0x101d9a=await _0x15c88c[-0xf67+0x1*-0x1f1c+0x2e84];!menus[_0x1df20f(0x17e)](_0x101d9a)&&await menus[_0x1df20f(0x176)](_0x101d9a,[]);for(let _0x43a74f of _0x3aed07){if(_0x43a74f&&_0x43a74f[-0x47+0x1eb*0x11+-0x2053]){let _0x898cfc=await _0x43a74f[0x1*-0x23bf+0x1*0x2002+0x3be][_0x1df20f(0x175)](',\x20');await menus[_0x1df20f(0x173)](_0x101d9a)[_0x1df20f(0x179)](..._0x898cfc);}}}}}}}await readFiles(_0x3a56b9(0x17b));let text='';for(let [menuName,menuTags]of menus){text+=header+'\x20'+menuName+'\x0a',text+=middle+'⭔'+prefix+menuTags[_0x3a56b9(0x192)]((_0x66b5a4,_0x260743)=>menuTags[_0x3a56b9(0x197)](_0x66b5a4)===_0x260743)[_0x3a56b9(0x191)]('\x0a'+middle+'⭔'+prefix)+'\x0a'+bottom+'\x0a\x0a';}let result=await text[_0x3a56b9(0x16c)](/['‘’]+/g,''),ppuser=await conn[_0x3a56b9(0x183)+_0x3a56b9(0x16e)](m[_0x3a56b9(0x180)],_0x3a56b9(0x17f))[_0x3a56b9(0x172)](_0x2f77a4=>thumbnail),results=_0x3a56b9(0x16d)+m[_0x3a56b9(0x180)][_0x3a56b9(0x175)]('@')[0x1173+-0x2*0x103f+0xf0b]+_0x3a56b9(0x17c)+prem+(_0x3a56b9(0x181)+':\x20')+sosmed+'\x0a'+facebook+'\x0a\x0a'+jembut;await conn[_0x3a56b9(0x16b)+'e'](m[_0x3a56b9(0x182)],{'text':results+'\x0a\x0a'+result,'contextInfo':{'mentionedJid':[m[_0x3a56b9(0x180)]],'externalAdReply':{'title':title,'mediaType':0x1,'showAdAttribution':!![],'containsAutoReply':!![],'renderLargerThumbnail':!![],'thumbnail':await fetch(ppuser)[_0x3a56b9(0x196)](_0x945efb=>_0x945efb[_0x3a56b9(0x17a)]()),'thumbnailUrl':ppuser,'sourceUrl':setting[_0x3a56b9(0x185)][_0x3a56b9(0x184)]}}},{'quoted':m});}catch(_0x314c54){console[_0x3a56b9(0x194)](_0x314c54),m[_0x3a56b9(0x193)](''+_0x314c54);}
+
+      conn.sendFile(m.chat, music, { mimetype: 'audioMessage', ptt: true, quoted: m })                
+   }
+};

@@ -1,0 +1,44 @@
+{
+    "name": "Maleficent MD",
+    "version": "10.0.0",
+    "description": "Bot Wea mudah Di Gunakan",
+    "main": "index.js",
+    "type": "module",
+    "directories": {
+        "lib": "lib",
+        "plugins": "plugins"
+    },
+    "scripts": {
+        "start": "node index"
+    },
+    "author": "Ruly Henderson",
+    "license": "GNU",
+    "dependencies": {
+        "@ruhend/scraper": "^2.0.3",
+        "@vitalets/google-translate-api": "^8.0.0",
+        "apk-dl": "github:ruhend2001/apk-dl",
+        "baileys-wa": "^7.1.0",
+        "cfonts": "latest",
+        "chalk": "^4.1.2",
+        "cheerio": "^1.0.0-rc.10",
+        "colors": "^1.4.0",
+        "crypto": "^1.0.1",
+        "file-type": "^18.0.0",
+        "fluent-ffmpeg": "^2.1.1",
+        "form-data": "^4.0.0",
+        "got": "^11.7.0",
+        "human-readable": "^0.2.1",
+        "jimp": "^0.16.2",
+        "libphonenumber-js": "^1.10.49",
+        "moment-timezone": "^0.5.34",
+        "node-cache": "^5.1.2",
+        "node-fetch": "^2.6.1",
+        "node-webpmux": "^3.1.1",
+        "path": "^0.12.7",
+        "performance-now": "2.1.0",
+        "pino": "^8.16.1",
+        "qrcode": "^1.5.1",
+        "qrcode-terminal": "^0.12.0",
+        "syntax-error": "^1.4.0"
+    }
+}

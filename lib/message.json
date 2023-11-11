@@ -1,0 +1,16 @@
+{
+    "wait": "جاري تلبية طلبكم...",
+    "daftar": "Untuk Menggunakan Fitur Ini Silahkan Daftar Terlebih Dahulu Ketik .daftar nama.umur\nContoh .daftar samsul.22",
+    "limit": "Limit Kamu Sudah Habis Tidak Bisa Gunain Fitur Ini\nUntuk Nambah Limit Silahkan Ketik\n.claim untuk claim harian\n.hour untuk claim perjam\n.buylimit jumlah untuk membeli limit contoh .buylimit 1  ",
+    "banned": "Kamu Telah Di Banned Tidak Bisa Menggunakan Bot\nSilahkan Konfirmasi Ke Owner",
+    "registered": "Kamu Sudah Daftar !",
+    "error": {
+        "Iv": "Link yang kamu berikan tidak valid",
+        "api": "Maaf terjadi kesalahan"
+    },
+    "OnlyGroup": "Perintah ini hanya bisa digunakan di grup",
+    "OnlyPM": "Perintah ini hanya bisa digunakan di private message",
+    "GrupAdmin": "Perintah ini hanya bisa digunakan oleh Admin Grup",   
+    "OnlyOwner": "Perintah ini hanya dapat digunakan oleh owner bot",
+    "premium": "Perintah ini khusus member premium\nhubungi owner"
+}
